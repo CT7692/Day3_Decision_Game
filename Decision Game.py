@@ -30,15 +30,13 @@ print("Your mission is to find the treasure.")
 print("You stand before an old, abandoned house beside an entrance to a dark forest.")
 print("Type 'house' to go into the house. Type 'forest' to walk into the forest.")
 dec1 = input("What do you do?\n")
-decision1 = dec1.lower()
 
-if decision1 == "house":
+if (decision1 := dec1.lower()) == "house":
     print("\nYou walk into the house and begin to feel very cold.\nA terrible smell fills the air coming from upstairs, but you realize it gets colder in the house as you keep walking.")
     print("Type 'upstairs' to walk upstairs. Type 'walk' to walk deeper inside the house.")
     dec2 = input("What do you do?\n")
-    decision2 = dec2.lower()
 
-    if decision2 == "walk":
+    if (decision2 := dec2.lower()) == "walk":
         print("\nYou begin to feel even colder as you walk.\nYou see and hear what appears to be a woman kneeling on the floor, sobbing, and mourning the loss of her loved one in the laundrey room.\nAcross from the laundrey room is the kitchen.")
         print("Type 'kitchen' to check out the kitchen. Type 'console' to investigate the condition of the woman.")
         dec3 = input("What do you do?\n")
